@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // The existing portfolio uses client-side auth/CMS APIs.
-  // Keep the app as a single Next.js shell while preserving all existing routes.
+
+  /*
+   * This project uses src/pages for the existing React application.
+   * Do not let Next.js treat those .jsx files as Next.js Pages Router routes.
+   */
+  pageExtensions: ["page.js", "page.jsx", "page.ts", "page.tsx"],
 };
+
 export default nextConfig;
