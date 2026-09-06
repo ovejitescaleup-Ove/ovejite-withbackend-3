@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
  :root{--background:210 20% 97%;--foreground:222 47% 11%;--card:0 0% 100%;--card-foreground:222 47% 11%;--popover:0 0% 100%;--popover-foreground:222 47% 11%;--primary:221 83% 53%;--primary-foreground:0 0% 100%;--secondary:210 20% 95%;--secondary-foreground:222 47% 11%;--muted:210 20% 95%;--muted-foreground:215 19% 35%;--accent:188 86% 53%;--accent-foreground:222 47% 11%;--destructive:0 84% 60%;--destructive-foreground:0 0% 98%;--border:214 20% 88%;--input:214 20% 88%;--ring:221 83% 53%;--radius:.25rem;--font-heading:"Space Grotesk",sans-serif;--font-body:"Space Grotesk",sans-serif;--font-display:"Space Grotesk",sans-serif;--font-mono:"DM Mono",monospace;}
  *{ @apply border-border outline-ring/50; }
