@@ -6,4 +6,5 @@ export function cn(...inputs) {
 }
 
 export const isIframe =
-  typeof window !== "undefined" && window.self !== window.top;
+  typeof window !== "undefined" &&
+  window.self !== window.top;
