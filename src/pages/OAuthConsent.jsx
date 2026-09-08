@@ -12,7 +12,10 @@ import AuthLayout from "@/components/AuthLayout";
 // Do not change the fetch calls, headers, or the `ctx` handle handling — styling
 // and copy are safe to edit.
 export default function OAuthConsent() {
-  const ctx = new URLSearchParams(window.location.search).get("ctx");
+ const ctx =
+  typeof window !== "undefined"
+    ? new URLSearchParams(window.location.search).get("ctx")
+    : null;
   const [info, setInfo] = useState(null);
   const [checking, setChecking] = useState(true);
   const [submitting, setSubmitting] = useState(false);
